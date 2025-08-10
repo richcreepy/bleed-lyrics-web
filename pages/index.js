@@ -79,7 +79,7 @@ export default function Home() {
   }
 
   function login() {
-    const client_id = "bbb5540508984510bd371efa2b0b9984"; // replace with your Spotify app client ID
+    const client_id = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID; // replace with your Spotify app client ID
     const redirect_uri = window.location.origin;
     const scopes = "user-read-currently-playing user-read-playback-state";
     const url =
